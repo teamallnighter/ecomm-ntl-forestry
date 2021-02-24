@@ -15,26 +15,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/search
-  label: Search
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/faq
-  label: Faq
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/contact
-  label: Contact
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/about
-  label: About
-  create: all
-  match: "**/*"
-- type: directory
   path: content
   label: Pages
   create: all
