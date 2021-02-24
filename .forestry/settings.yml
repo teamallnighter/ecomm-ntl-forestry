@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: data/faq.yml
+  label: Data/faq.yml
+  create: all
+  match: "**/*"
+- type: directory
   path: content/shop
   label: Shop
   create: all
@@ -34,11 +39,6 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: data/faq.yml
-  label: Data/faq.yml
-  create: all
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
