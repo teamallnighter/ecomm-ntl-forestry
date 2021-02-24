@@ -36,9 +36,9 @@ sections:
   match: "*"
 - type: directory
   path: data/faq.yml
+  label: Data/faq.yml
   create: all
   match: "**/*"
-
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
