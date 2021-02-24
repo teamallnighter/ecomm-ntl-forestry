@@ -1,176 +1,123 @@
-######################## default configuration ####################
 baseURL = "https://trusting-ride-17445a.netlify.app/"
+disqusShortname = "adrian"
 languageCode = "en-us"
-title = "Adrian Hugo | E-commerce template"
-theme = "adrian-hugo"
-summaryLength = "20"
 paginate = 6
-disqusShortname = "adrian" #get your shortname form : disqus.com
-
-############################ Output ###############################
+summaryLength = "20"
+theme = "adrian-hugo"
+title = "Adrian Hugo | E-commerce template"
+[[menu.footer]]
+URL = "shop"
+name = "Shop"
+weight = 3
+[[menu.footer]]
+URL = "faq"
+name = "Faq"
+weight = 2
+[[menu.footer]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 4
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 4
+[[menu.main]]
+URL = "faq"
+name = "Faq"
+weight = 3
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 2
+[[menu.main]]
+URL = "shop"
+name = "Shop"
+weight = 1
 [outputs]
-  home = ["HTML", "AMP", "RSS", "JSON"]
-
-############################# Taxonomies ###########################
-[taxonomies]
-  category = "categories"
-  color = "colors"
-  size = "sizes"
-
-############################# Plugins ##############################
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  #URL = "plugins/slick/slick-theme.css"
-  [[params.plugins.css]]
-  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/SyoTimer/jquery.syotimer.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
-  [[params.plugins.js]]
-  URL = "plugins/instafeed-js/instafeed.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/fuse.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/mark.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/search.js"
-  [[params.plugins.js]]
-  URL = "plugins/google-map/gmap.js"
-
-  
-############################## navigation ###############################
-[menu]
-    
-  [[menu.main]]
-  name = "Shop"
-  URL = "shop"
-  weight = 1
-    
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Faq"
-  URL = "faq"
-  weight = 3
-    
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 4
-    
-  # footer menu
-  [[menu.footer]]
-  name = "Shop"
-  URL = "shop"
-  weight = 1
-
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  
-  [[menu.footer]]
-  name = "Faq"
-  URL = "faq"
-  weight = 3
-    
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 4
-
-
-#################### default parameters ################################
+home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
-logo = "images/logo.png"
-home = "Home"
-# Meta data
-description = "This is meta description"
 author = "Themefisher"
-# snipcart public api key
-snipcartAPI = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
+contactFormAction = "#"
+copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
 currency = "$"
-# google map
+description = "This is meta description"
+email = "demo@email.com"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+googleAnalitycsID = "Your ID"
+home = "Home"
+location = "Dhaka, Bangladedsh"
+logo = "images/logo.png"
 mapLatitude = "51.5223477"
 mapLongitude = "-0.1622023"
 mapMarker = "images/marker.png"
-# Google Analitycs
-googleAnalitycsID = "Your ID"
-# Contact Information
 mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
-# contact form action
-contactFormAction = "#" # contact form works with : https://formspree.io
-# copyright
-copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
-
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = "" # use .png , .svg or .gif format
-
-  # search
-  [params.search]
-  enable = true
-
-  
-############################# Product Share ########################
-[[params.share]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-
-############################### Footer #############################
+snipcartAPI = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
 [params.footer]
 content = "Iste dolores iure quis excepturi, deserunt praesentium."
-
-# opening hours
 [[params.footer.openingHour]]
 day = "Monday-Friday"
 time = "8.00-20.00"
-
 [[params.footer.openingHour]]
 day = "Saturday"
 time = "10.00-20.00"
-
 [[params.footer.openingHour]]
 day = "Sunday"
 time = "12.00-20.00"
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+[[params.plugins.css]]
+URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/SyoTimer/jquery.syotimer.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+[[params.plugins.js]]
+URL = "plugins/instafeed-js/instafeed.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/mark.js"
+[[params.plugins.js]]
+URL = "plugins/search/search.js"
+[[params.plugins.js]]
+URL = "plugins/google-map/gmap.js"
+[params.preloader]
+enable = true
+preloader = ""
+[params.search]
+enable = true
+[[params.share]]
+icon = "ti-facebook"
+link = "#"
+title = "facebook"
+[[params.share]]
+icon = "ti-twitter-alt"
+link = "#"
+title = "twitter"
+[[params.share]]
+icon = "ti-instagram"
+link = "#"
+title = "instagram"
+[[params.share]]
+icon = "ti-linkedin"
+link = "#"
+title = "linkedin"
+[taxonomies]
+category = "categories"
+color = "colors"
+size = "sizes"
